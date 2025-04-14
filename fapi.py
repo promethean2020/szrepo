@@ -13,7 +13,7 @@ user_list= [User(id= 0, name= "Alice"),User(id= 1, name= "Bob")]
 def read_root():
     return {"Hello": "World"}
 
-
+# reading users list through fast api...
 @app.get("/user/{user_id}")
 def read_item(user_id: int):
     user=user_list[user_id]
